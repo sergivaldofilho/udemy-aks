@@ -101,7 +101,7 @@ resource "helm_release" "argo_rollouts" {
   count = var.argo_rollouts_enabled ? 1 : 0
 
   name       = "argo-rollouts"
-  repository = "https://github.io"
+  repository = "https://argoproj.github.io/argo-helm"
   chart      = "argo-rollouts"
   version    = "2.32.4"
   namespace  = kubernetes_namespace_v1.argo_rollouts[0].metadata[0].name
