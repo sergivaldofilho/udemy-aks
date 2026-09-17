@@ -10,6 +10,9 @@ resource "azurerm_kubernetes_cluster" "aks" {
   resource_group_name = data.azurerm_resource_group.main.name
   dns_prefix          = var.aks_dns_prefix
   kubernetes_version  = var.kubernetes_version
+  node_provisioning_profile {
+    mode = "Manual"
+  }
 
   # Free tier for labs
   sku_tier = "Free"
