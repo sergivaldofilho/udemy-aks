@@ -3,7 +3,7 @@ name: Dev Deploy and Promote to Hml
 on:
   push:
     branches:
-      - develop
+      - developer
 
 jobs:
   deploy-dev:
