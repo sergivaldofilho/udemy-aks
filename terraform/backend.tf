@@ -4,21 +4,21 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 3.80"
+      version = "~> 5.5"
     }
     helm = {
       source  = "hashicorp/helm"
-      version = "~> 2.12"
+      version = "~> 3.3"
     }
     kubernetes = {
       source  = "hashicorp/kubernetes"
-      version = "~> 2.24"
+      version = "~> 3.2"
     }
   }
 
   backend "azurerm" {
     resource_group_name  = "gh-terraform"
-    storage_account_name = "ghdevopsautomatf"
+    storage_account_name = "ghdevopsautomatfscgomes"
     container_name       = "tfstate"
     # key será definido via -backend-config no workflow
   }
