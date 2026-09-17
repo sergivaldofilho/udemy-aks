@@ -33,7 +33,7 @@ variable "aks_dns_prefix" {
 variable "kubernetes_version" {
   type        = string
   description = "Kubernetes version"
-  default     = "1.31.11"
+  default     = "1.35.7"
 }
 
 # Node Pool Configuration simplified
