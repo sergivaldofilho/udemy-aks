@@ -6,7 +6,7 @@ resource_group_name = "gh-devops-hml"
 # AKS Cluster Configuration
 aks_cluster_name   = "aks-devops-hml"
 aks_dns_prefix     = "aks-devops-hml"
-kubernetes_version = "1.31.11"
+kubernetes_version = "1.35.7"
 
 # Simplified configuration for basic AKS lab
 
