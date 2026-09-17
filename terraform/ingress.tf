@@ -133,7 +133,7 @@ resource "helm_release" "nginx_ingress" {
 }
 
 # Data source to get LoadBalancer IP
-data "kubernetes_service" "nginx_ingress" {
+data "kubernetes_service_v1" "nginx_ingress" {
   count = var.nginx_ingress_enabled ? 1 : 0
 
   metadata {
